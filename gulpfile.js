@@ -74,6 +74,10 @@ task("cp-docs", () => {
   return src(path.docs.src).pipe(dest(path.docs.dest));
 });
 
+task("cp-nojekyll", () => {
+  return src("docs/.nojekyll").pipe(dest(path.dest));
+});
+
 task("js", () => {
   return src(path.js.src)
     .pipe(babel({ presets: ["@babel/preset-env"] }))
@@ -128,6 +132,7 @@ task(
     "cp-favicon",
     "cp-images",
     "cp-docs",
+    "cp-nojekyll",
     "js",
     "css",
     "scss",
@@ -144,6 +149,7 @@ task("watch", () => {
       "cp-favicon",
       "cp-images",
       "cp-docs",
+      "cp-nojekyll",
       "js",
       "css",
       "scss",
