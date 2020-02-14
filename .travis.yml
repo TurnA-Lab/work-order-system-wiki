@@ -14,7 +14,7 @@ script:
   - git config user.email "iskyex@outlook.com"
   - git add .
   - git commit -m "update wiki"
-  - git push --force --quiet https://${GITHUB_TOKEN}@github.com/JUST-NC/work-order-system-wiki.git gh-pages
+  - git push --force --quiet https://${GITHUB_TOKEN}@github.com/JUST-NC/work-order-system-wiki.git master:gh-pages
 
 branches:
   only:
