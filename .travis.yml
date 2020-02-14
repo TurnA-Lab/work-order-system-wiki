@@ -1,0 +1,21 @@
+language: node_js
+os: linux
+node_js: node
+
+install:
+  - npm install
+  - npm install -g gulp-cli
+
+script:
+  - gulp build
+  - cd ./public
+  - git init
+  - git config user.name "SkyeYoung"
+  - git config user.email "iskyex@outlook.com"
+  - git add .
+  - git commit -m "update wiki"
+  - git push --force --quiet https://${GITHUB_TOKEN}@github.com/JUST-NC/work-order-system-wiki.git gh-pages
+
+branches:
+  only:
+    - master
