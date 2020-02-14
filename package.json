@@ -1,0 +1,36 @@
+{
+  "name": "just-wo-wiki",
+  "version": "1.0.0",
+  "description": "JUST work order's wiki",
+  "main": "index.js",
+  "devDependencies": {
+    "@babel/core": "^7.8.4",
+    "@babel/highlight": "^7.8.3",
+    "@babel/preset-env": "^7.8.4",
+    "@babel/register": "^7.8.3",
+    "autoprefixer": "^9.7.4",
+    "cssnano": "^4.1.10",
+    "del": "^5.1.0",
+    "eslint": "^6.8.0",
+    "gulp": "^4.0.2",
+    "gulp-babel": "^8.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-file-include": "^2.1.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-line-ending-corrector": "^1.0.3",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rev": "^9.0.0",
+    "gulp-rev-collector": "^1.3.1",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "node-sass": "^4.13.1",
+    "vinyl-paths": "^3.0.1"
+  },
+  "scripts": {
+    "serve": "serve ./public",
+    "build": "gulp build"
+  },
+  "author": "SkyeYoung",
+  "license": "MIT"
+}
