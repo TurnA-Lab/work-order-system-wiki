@@ -29,7 +29,8 @@
   },
   "scripts": {
     "serve": "serve ./public",
-    "build": "gulp build"
+    "build": "gulp build",
+    "watch": "gulp"
   },
   "author": "SkyeYoung",
   "license": "MIT"

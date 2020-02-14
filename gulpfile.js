@@ -97,8 +97,7 @@ task("scss", () => {
 task("html", () => {
   return src(path.html.src)
     .pipe(includeFile())
-    .pipe(dest(path.resource + "/html"))
-    .pipe(connect.reload());
+    .pipe(dest(path.resource + "/html"));
 });
 
 task("html-minify", () => {
@@ -111,7 +110,8 @@ task("html-minify", () => {
         minifyURLs: true
       })
     )
-    .pipe(dest(path.dest));
+    .pipe(dest(path.dest))
+    .pipe(connect.reload());
 });
 
 task("connect", () => {
@@ -138,11 +138,12 @@ task(
 
 task("watch", () => {
   return watch(
-    [path.src, path.html.resource],
+    [path.src, "docs"],
     series(
       "del",
       "cp-favicon",
       "cp-images",
+      "cp-docs",
       "js",
       "css",
       "scss",
@@ -152,4 +153,4 @@ task("watch", () => {
   );
 });
 
-task("default", parallel("connect", "watch"));
+task("default", parallel("watch", "connect"));

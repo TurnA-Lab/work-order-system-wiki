@@ -9,10 +9,12 @@
       window.$docsify = {
         name: "JUST WO's Wiki",
         basePath: "/docs/",
-        repo: "",
-        "flexible-alerts": {
-          style: "flat"
+        auto2top: true,
+        loadSidebar: true,
+        alias: {
+          "/.*/_sidebar.md": "/_sidebar.md"
         },
+        subMaxLevel: 3,
         search: {
           maxAge: 86400000, // 过期时间，单位毫秒，默认一天
           paths: [],
@@ -33,6 +35,5 @@
     <script src="/js/search.js"></script>
     <script src="/js/emoji.js"></script>
     <script src="/js/zoom-image.js"></script>
-    <script src="/js/docsify-plugin-flexible-alerts.min.js"></script>
   </body>
 </html>
