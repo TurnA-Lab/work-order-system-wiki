@@ -8,11 +8,11 @@
 
 ## 介绍
 
-这里是源码，不能直接食用。由于最后需要部署在内网，所以将 Docsify 用到的文件都放置在本地，同时进行了一些魔改。
+这里是源码，不能直接食用。
 
 最终的文档用于 JUST WO 系统，分为「使用说明」、「源码解释」、「 Wiki 文档」三个部分。
 
-站点使用 [Docsify](https://github.com/docsifyjs/docsify) 制作，Markdown 撰写，并应用古典的 [gulp](https://github.com/gulpjs/gulp) 进行构建。
+站点使用 [Docsify](https://github.com/docsifyjs/docsify) 制作，Markdown 撰写，并应用古典的 [gulp](https://github.com/gulpjs/gulp) 进行构建。由于最后需要部署在内网，所以将 Docsify 用到的文件都放置在本地，同时进行了一些魔改。
 
 ## 本地食用
 
