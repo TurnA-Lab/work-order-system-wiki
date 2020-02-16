@@ -1,5 +1,5 @@
 - **使用说明**
-  - [用户](usage/user)
+  - [普通用户](usage/user)
   - [学院管理员](usage/college_admin)
   - [科室管理员](usage/office_admin)
   - [Root 管理员](usage/root_admin)
